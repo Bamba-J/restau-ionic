@@ -1,0 +1,23 @@
+
+ion-toolbar.header{
+    --background: url('../../assets/img/og.png');
+    height: 100px;
+  }
+  ion-content.body{
+    --background: url('../../assets/img/images.jpg');   
+  }
+  ion-card.card{
+    --box-shadow: none;
+    --background: rgba(0, 0, 0, 0.5);
+    --border-radius : 5px;
+  }
+  ion-card-header.card-header{
+    --color: #ffffff;
+  }
+  .field{
+    margin-top: 50px;
+    border-color: aliceblue;
+  }
+  .c1{
+    float: left;
+  }

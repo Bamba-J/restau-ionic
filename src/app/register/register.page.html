@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button position ="left" (click)="gohome()" color="primary"></ion-back-button>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" >
+  <ion-card class= "card">
+
+      <ion-card-header class= "card-header">
+          <h1>INSCRIPTION</h1>
+        </ion-card-header>
+<ion-item>
+  <ion-label position="floating">Nom</ion-label>
+  <ion-input type="text" [(ngModel)]="liste.nom"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label position="floating">Prénom</ion-label>
+    <ion-input type="text" [(ngModel)]="liste.prenom" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label  position="floating">Email</ion-label>
+      <ion-input type="email"  [(ngModel)]="liste.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label  position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="liste.password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label  position="floating"> retaper Password</ion-label>
+        <ion-input type="password" [(ngModel)]="liste.cpassword"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+          <ion-label position="floating">code ecobank</ion-label>
+          <ion-input type="number" [(ngModel)]="liste.numdossier"></ion-input>
+        </ion-item>
+        <ion-button expand="block" (click)="ajouter(liste)" >Valider<ion-icon name="checkmark"></ion-icon></ion-button>
+      </ion-card>
+</ion-content>

@@ -1,0 +1,21 @@
+ion-toolbar.header{
+    --background : url('../../assets/img/og.png');
+    --background-repeat: no-repeat;
+    height: 100px;
+  }
+  ion-content.background{
+      --background: url('../../assets/img/images.jpg');
+      --background-repeat: no-repeat;
+  }
+  #button2{
+      height: 40px;
+      width: 200px;
+      margin-top: 50px;
+      margin-left: 10px;
+  }
+  #button1{
+      height: 40px;
+      width: 200px;
+      margin-top: 50px;
+      margin-left: 10px;
+  }

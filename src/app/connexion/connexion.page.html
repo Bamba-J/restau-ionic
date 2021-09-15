@@ -1,0 +1,32 @@
+  <ion-header>
+  <ion-toolbar class="header">
+   <div class="logo">
+     <img src="../../assets/img/og.png" alt="">
+   </div>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="body">
+    <ion-card class= "card">
+        <ion-card-header class= "card-header">
+          <h1>CONNEXION</h1>
+        </ion-card-header>
+  <ion-item>
+    <ion-label  position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input> 
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+ 
+    <ion-button color="primary" (click)="login(user)" >Valider<ion-icon name="checkmark"></ion-icon></ion-button>
+    <ion-button color="primary" (click)="resetpassword()">mot de passe oublié</ion-button>
+  <p><ion-button color="light" (click)="inscription()" >Inscrivez vous ici</ion-button></p>
+</ion-card>
+</ion-content>
+
+

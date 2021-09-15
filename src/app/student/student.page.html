@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar class="header">
+   <ion-button  color = "#ffffff" (click)= "deconnexion()" class = "h1" ><ion-icon name="power" color= "danger"></ion-icon></ion-button>
+   <div color ="danger" >credits:{{item.ticket}}</div>
+  <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+    <ion-card class= "card">
+        <ion-button color="primary" class="b1" (click)= "manger()" ><ion-icon name="pizza"></ion-icon>Manger</ion-button>
+        <ion-button color="primary" class="b2" (click)= "transferer()" ><ion-icon name="swap"></ion-icon>Transferer</ion-button>
+        <ion-button color="primary" class="b3"  (click)= "consulter()"><ion-icon name="book"></ion-icon>Acheter</ion-button>
+      <p><ion-button color="light"   class="b4"  (click)= "solde()">solde ecobank</ion-button></p>
+      <p><ion-button color="primary" class="b5"  (click)= "actualiser()"><ion-icon name="sync"></ion-icon></ion-button></p>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-back-button (click)= "goback()" color="primary"></ion-back-button>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+    <ion-card class= "card">
+    <ion-card-header class= "card-header">
+        <h1> TRANSFERT </h1>
+      </ion-card-header>
+  <ion-item>
+    <ion-label  position="floating">saisir l'adresse email</ion-label>
+    <ion-input  type="text" [(ngModel)]="email"></ion-input> 
+  </ion-item>
+
+   <ion-item>
+    <ion-label position="floating">Nombre de credits</ion-label>
+    <ion-input type="number" [(ngModel)]="tickets"></ion-input>
+  </ion-item>
+ 
+    <ion-button color="primary" (click)="envoyer()" class="b3">Envoyer<ion-icon name="checkmark"></ion-icon></ion-button>
+     
+</ion-card>
+</ion-content>
+

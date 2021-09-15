@@ -1,0 +1,35 @@
+ion-toolbar.header{
+    --background: url('../../assets/img/og.png');
+    height: 100px;
+  }
+  ion-content.body{
+    --background: url('../../assets/img/images.jpg');
+    //--background: linear-gradient (to left, #3880ff; #ffffff);
+  }
+  ion-card.card{
+    --background: rgba(0, 0, 0, 0.5);
+    --border-radius : 5px;
+    height: 430px;
+    width: 270px;
+  }
+  .b1{
+    height: 170px;
+    width: 131px;
+  }
+  .b2{
+    height: 170px;
+    width: 131px;
+  }
+  .b3{
+    height: 170px;
+    width: 265px;
+  }
+  .h1{
+    float: right;
+  }
+  .b4{
+    float: right;
+  }
+  .b5{
+    float: left;
+  }

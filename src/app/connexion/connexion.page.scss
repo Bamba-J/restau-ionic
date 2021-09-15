@@ -1,0 +1,33 @@
+
+  .logo{
+    position: relative;
+    height: 40px;
+    
+  }
+  .logo img{
+    font-size: 1em;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    --background: url('../../assets/img/og.png'); 
+}
+  ion-content.body{
+    --background: url('../../assets/img/images.jpg');   
+  }
+  ion-card.card{
+    --box-shadow: none;
+    --background: rgba(0, 0, 0, 0.5);
+    //--border-radius : 5px;
+    height: 600px;
+  }
+  ion-card-header.card-header{
+    --color: #ffffff;
+  }
+  .field{
+    margin-top: 50px;
+    border-color: aliceblue;
+  }
+  .db{
+    color: aliceblue;
+  }

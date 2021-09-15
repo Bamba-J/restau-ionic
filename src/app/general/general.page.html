@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-toolbar class="header">
+      <ion-button  color = "#ffffff" (click)= "deconnexion()" class = "h1" ><ion-icon name="power" color= "danger"></ion-icon></ion-button>
+      <div color ="danger" ><h2>A.G</h2></div>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="body">
+      <ion-card class= "card">
+          <ion-card-header  class= "card-header" >
+           <h1 >BILAN GENERAL</h1>
+            </ion-card-header>
+          
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>
+                    ESP
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                    Principal
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                    Central
+                  </div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <div>
+                    {{num2}}
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                    {{num1}}
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                    {{num}}
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+      ___________________________________
+        <p> <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <div>
+                    TOTAL:
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                  </div>
+                </ion-col>
+                <ion-col>
+                  <div>
+                    {{num3}}
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+    
+          <ion-button color = "danger" (click)= "remove()" class = "h1" >remove</ion-button>
+          <ion-button color = "primary" (click)= "actualisation()" class = "h1" >actualiser</ion-button>
+      </ion-card>
+  </ion-content>
+  
+  
+  
+  
+  

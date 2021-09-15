@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-button color = "#ffffff" (click)= "deconnexion()" class = "h1" ><ion-icon name="power" color= "danger"></ion-icon></ion-button>
+    <div color ="danger" ><h2>{{resto}}</h2></div>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body">
+    <ion-card class= "card">
+        <ion-card-header  class= "card-header" >
+         <h1>ETUDIANTS AUTORISES</h1>
+          </ion-card-header>
+        <ion-item class="item" *ngFor = "let item of items">
+          <p>  {{item.prenom}} {{item.nom}}: </p>
+               {{item.ticket}} crédits
+        </ion-item>
+        <ion-button color = "danger" (click)= "remove()" class = "h1" >remove</ion-button>
+        <ion-button color = "danger" (click)= "scanner()" class = "h1" >Scanner</ion-button>
+    </ion-card>
+</ion-content>
+
+
+
+
